@@ -51,6 +51,7 @@ body{
     transition: 1s;
     left:0;
     display: grid;
+    overflow: hidden;
     grid-template-columns: repeat(2, calc(850px/2));
 }
 
@@ -111,4 +112,28 @@ input{
     transition: .5s;
 }
 
-.btn:hover
+.btn:hover,
+input:focus{
+    background: #000;
+    color: #fff;
+}
+.link { text-align: center;
+    color: #3f3f3f;
+    text-transform: capitalize;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+.link:hover {
+    color: #fff;
+}
+
+#sign-up-form {
+    margin-left:50%;
+}
+
+#sign-up-form .title {
+    margin-bottom: 30px;
+}

@@ -20,9 +20,24 @@
                 </div>
                 <div class="submit-container">
                     <button type="submit" class="btn">Sign In</button>
-                    <p class="link">New Here? Sign Up here!</p>
+                    <p class="link" onclick="switchForm('register')">New Here? Sign Up here!</p>
                 </div>
             </div>
+            <!-- Log In Form -->
+            <div class="form" id="sign-up-form">
+                <h1 class="title">Sign Up</h1>
+                <div class="fields">
+                    <input type="text" placeholder="name">
+                    <input type="text" placeholder="username">
+                    <input type="text" placeholder="email">
+                    <input type="password" placeholder="password">
+                </div>
+                <div class="submit-container">
+                    <button type="submit" class="btn">Sign In</button>
+                    <p class="link" onclick="switchForm('login')">Already have an account? Sign In here!</p>
+                </div>
+            </div>
+
         </div>
         
         
@@ -30,6 +45,6 @@
         
 
     </div>
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
