@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: gray;
     margin: 0;
@@ -6,31 +6,35 @@ body {
     /* display: flex;
     justify-content: center;
     align-items: center; */
-    min-height: 100vh;
-}
+    /* min-height: 100vh;} */ 
 
 h1 {
     text-align: center;
     margin-top: 20px; /* Adjust as needed for spacing */
 }
-.carHub {
-    /* text-align: right; */
-    justify-content:flex-end ;
-}
+
 .form-container {
     margin: 0 20px;
 }
-
+/* .carHub {
+    width: 80%;
+    height: 80vh;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 form {
-    background-color: #fff;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 50px;
     width: 100%;
     box-sizing: border-box;
     margin-top: 20px;
     display: flex;
-    margin: 0 auto; /* Center the form-container horizontally */
+    margin: auto; /* Center the form-container horizontally */
     width: fit-content; /* Adjust the width to fit its content */
     padding: 20px; /* Added some padding around the form for spacing */
 }
@@ -80,3 +84,38 @@ img {
     margin-bottom: 16px;
     border-radius: 4px;
 }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* This is important to position elements inside it */
+}
+
+.content-overlay {
+    width: 70%;
+    height: 50%;
+    min-height: 600px;
+    position: absolute;
+    width: 80%;
+    max-width: 1200px; /* Adjust this value as needed */
+    z-index: 2; /* This ensures that the overlay is above the background */
+}
+
+.carHub {
+    width: 80%;
+    height: 80vh;
+    min-height: 600px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Lower than content-overlay */
+}
+
+/* Adjustments to other styles might be needed to ensure they fit well within this new structure */
