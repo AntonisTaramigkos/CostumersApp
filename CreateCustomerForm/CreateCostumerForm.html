@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CreateCustomerForm.css">
     <title>Create Customer</title>
 </head>
 <body>
+
+    <div class="title-container">
+        <h1>Εγραφή Πελάτη</h1>
+    </div>
+    <!-- <div class="carHub">
+        <img src="../img/carHubLogo" alt="Car Hub Logo">
+    </div> -->
     <div class="form-container">
         <form action="" id="profileForm">
             <div class="column-left">
@@ -27,11 +35,18 @@
                 <label for="carType">Car Type:</label>
                 <input type="text" id="carType" name="carType" >
 
-
-
+                <button type="button" onclick="SubmitForm()"  class="button">KΑταχώρηση</button>
 
             </div>
+            <div class="column-right">
+                <label for="photo">Profile Picture:</label>
+                <input type="file" name = "photo" id="photo" onchange="displayProfilePicture()">
+                <img src="../img/profilePhotos/" alt="Profile PIcture" style="display:none;" id="profilePicture">
+
+            </div>
+
         </form> 
     </div>
+    <script src="./CreateCostumerForm.js"></script>
 </body>
 </html>
