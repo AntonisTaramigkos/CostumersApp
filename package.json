@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+    // "deploy": "ng deploy --base-href=https://AntonisTaramigkos.github.io/angular-introduction/"
   },
   "author": "",
   "license": "ISC",
