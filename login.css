@@ -97,7 +97,7 @@ input{
     color: #3f3f3f;  
 }
 .btn{
-    color: #fff;
+    color:  #ce9f11;
     background: #0d0d0d;
     border: none;
     padding: 10px 40px;
@@ -112,7 +112,7 @@ input{
     transition: .5s;
 }
 
-.btn:hover,
+
 input:focus{
     background: #000;
     color: #fff;
@@ -124,6 +124,15 @@ input:focus{
     cursor: pointer;
     transition: .5s;
 
+}
+
+.btn:hover{
+    cursor: pointer;
+    background:#ffc000 ;
+    box-shadow: 0 0 5px #ffc000,
+                0 0 20px #ffc000,
+                0 0 60px #ffc000,
+                0 0 150px #ffc000;
 }
 
 .link:hover {
